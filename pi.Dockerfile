@@ -4,7 +4,7 @@ ARG PI_VERSION=latest
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends bash ca-certificates \
-    fd-find git ripgrep yt-dlp ffmpeg python3 python3.11-venv python3.11-pip \
+    fd-find git ripgrep yt-dlp ffmpeg python3 python3.11-venv python-pip \
     make tmux vim neovim curl wget jq yq \
     && ln -s /usr/bin/fdfind /usr/local/bin/fd \
     && rm -rf /var/lib/apt/lists/*
