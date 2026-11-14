@@ -54,6 +54,15 @@ podman run --rm -it \
     localhost/pi-agent:local
 ```
 
+### TODO Next
+
+This image is about 3 Go in size, mostly because of npm!
+It is way too much :sweat_smile:.
+I need to find a solution to reduce the size to less than 300 MB or equivalent.
+I can try a multi-stage Dockerfile, I don't know.
+
+To be continued...
+
 ## Extensions
 
 - **bash-guard**: Guards `bash` tool calls; prompts for destructive
