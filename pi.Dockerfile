@@ -21,9 +21,10 @@ RUN git clone https://github.com/tmux-plugins/tpm home/node/.tmux/plugins/tpm \
 RUN cd /home/node/.pi/agent/extensions/bash-guard && npm install \
     && cd /home/node/.pi/agent/extensions/browser && npm install \
     && cd /home/node/.pi/agent/extensions/web-fetch && npm install \
-    && python3 -m venv ~/.pi/agent/skills/pdf-reader/.venv \
+    && python3 -m venv /home/node/.pi/agent/skills/pdf-reader/.venv \
     && /home/node/.pi/agent/skills/pdf-reader/.venv/bin/pip install \
         -r /home/node/.pi/agent/skills/pdf-reader/requirements.txt \
+    && python3 -m venv /home/node/.pi/agent/skills/rss-feed/.venv \
     && /home/node/.pi/agent/skills/rss-feed/.venv/bin/pip install \
         -r /home/node/.pi/agent/skills/rss-feed/requirements.txt \
     && pi update --extensions
