@@ -12,7 +12,6 @@ RUN apt-get update \
 RUN npm install -g --ignore-scripts "@earendil-works/pi-coding-agent@${PI_VERSION}"
 
 COPY agent /home/node/.pi/agent
-COPY .tmux.conf /home/node/.tmux.conf
 RUN chown -R node:node /home/node/
 
 USER node
@@ -38,6 +37,7 @@ USER root
 RUN mkdir -p /workspace && chown node:node /workspace
 
 USER node
+COPY .tmux.conf /home/node/.tmux.conf
 WORKDIR /workspace
 ENTRYPOINT ["tmux", "new", "-A", "-s", "pi", "'pi'"]
 
