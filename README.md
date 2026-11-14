@@ -26,11 +26,7 @@ API keys for `auth.json` and `telegram.json`.
 
 There is also still a risk of a session poisoning, or equivalent,
 because it is mounted into the container.
-I need this agent to remember things, I don't know to do it without it...
-
-Usually, there is a main instance of `pi` installed on the machine that will
-download extensions, update things, etc..
-Then, this containerized version will be used for running the agent.
+I need this agent to remember things, I don't know how to do without it...
 
 Building.
 
@@ -45,7 +41,6 @@ podman run --rm -it \
     --name AgentSmithResurrection \
     -h sandboxpi \
     -e OPENROUTER_API_KEY \
-    -w /tmp \
     -v "$HOME/Documents/currentWork:/workspace/currentWork" \
     -v "$HOME/.pi/agent/telegram.json:$PI_CODING_AGENT_DIR/telegram.json:ro" \
     -v "$HOME/.pi/agent/pi-hermes-memory:$PI_CODING_AGENT_DIR/pi-hermes-memory" \
