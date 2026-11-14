@@ -48,6 +48,7 @@ podman run --rm -it \
     -e OPENROUTER_API_KEY \
     -v "$HOME/Documents/currentWork:/workspace/currentWork" \
     -v "$HOME/.pi/agent/telegram.json:$PI_CODING_AGENT_DIR/telegram.json:ro" \
+    -v "$HOME/.pi/agent/rss.json:$PI_CODING_AGENT_DIR/rss.json:ro" \
     -v "$HOME/.pi/agent/pi-hermes-memory:$PI_CODING_AGENT_DIR/pi-hermes-memory" \
     -v "$HOME/.pi/agent/projects-memory:$PI_CODING_AGENT_DIR/projects-memory" \
     -v "$HOME/.pi/agent/sessions:$PI_CODING_AGENT_DIR/sessions" \

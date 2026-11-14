@@ -1,0 +1,2 @@
+# Miniflux Python client
+miniflux>=1.0.0
