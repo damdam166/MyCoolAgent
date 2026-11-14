@@ -1,0 +1,13 @@
+{
+	"profiles": {
+		"default": {
+			"botToken": "CHANGEME",
+			"botUsername": "SesameStreet",
+			"botId": 666,
+			"allowedUserId": 3630
+		}
+	},
+	"threads": {
+		"automaticCleanup": false
+	}
+}
