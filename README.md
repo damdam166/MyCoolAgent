@@ -10,6 +10,8 @@ Inspired from
 
 Date: 2026/11/14
 
+![My Cool Agent Demo](agent/assets/MyCoolAgent.gif)
+
 ### Dealing with Shai Hulud
 
 I encourage you to copy `.npmrc` from `agent/` to `~/.npmrc`.
@@ -37,6 +39,9 @@ podman build -t pi-agent:local -f pi.Dockerfile .
 Running.
 
 ```bash
+export PI_CODING_AGENT_DIR="/home/node/.pi/agent"
+export OPENROUTER_API_KEY="sk-or-v1-CHANGEME"
+
 podman run --rm -it \
     --name AgentSmithResurrection \
     -h sandboxpi \
@@ -46,9 +51,6 @@ podman run --rm -it \
     -v "$HOME/.pi/agent/pi-hermes-memory:$PI_CODING_AGENT_DIR/pi-hermes-memory" \
     -v "$HOME/.pi/agent/projects-memory:$PI_CODING_AGENT_DIR/projects-memory" \
     -v "$HOME/.pi/agent/sessions:$PI_CODING_AGENT_DIR/sessions" \
-    -v "$HOME/.pi/agent/.pi-hermes-locks.sqlite:$PI_CODING_AGENT_DIR/.pi-hermes-locks.sqlite" \
-    -v "$HOME/.pi/agent/.pi-hermes-locks.sqlite-shm:$PI_CODING_AGENT_DIR/.pi-hermes-locks.sqlite-shm" \
-    -v "$HOME/.pi/agent/.pi-hermes-locks.sqlite-wal:$PI_CODING_AGENT_DIR/.pi-hermes-locks.sqlite-wal" \
     localhost/pi-agent:local
 ```
 
