@@ -1,5 +1,6 @@
 agent/auth.json
 agent/telegram.json
+agent/rss.json
 
 **/*node_modules/
 **/*.venv
