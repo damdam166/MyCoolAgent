@@ -1,0 +1,15 @@
+{
+  "name": "pi-extensions",
+  "private": true,
+  "dependencies": {
+    "@0xkahi/pi-vim-keys": "^1.2.2",
+    "@juicesharp/rpiv-ask-user-question": "^2.15.0",
+    "@llblab/pi-telegram": "^0.59.1",
+    "awesome-pi-themes": "^1.2.19",
+    "oh-my-agent-pi": "^20.42.3",
+    "openwiki": "^0.9.0",
+    "pi-hermes-memory": "^0.11.0",
+    "pi-lens": "^4.4.12",
+    "pi-naming": "^0.8.0"
+  }
+}

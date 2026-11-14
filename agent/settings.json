@@ -1,0 +1,25 @@
+{
+  "lastChangelogVersion": "1.5.2",
+  "defaultProvider": "openrouter",
+  "defaultModel": "openrouter/free",
+  "hideThinkingBlock": false,
+  "packages": [
+    "npm:@0xkahi/pi-vim-keys",
+    "git:github.com/amosblomqvist/pi-interactive-subagents",
+    "npm:openwiki",
+    "npm:@juicesharp/rpiv-ask-user-question",
+    "npm:pi-lens",
+    "npm:@llblab/pi-telegram",
+    "npm:pi-naming",
+    "npm:oh-my-agent-pi",
+    "npm:pi-hermes-memory",
+    "npm:awesome-pi-themes"
+  ],
+  "extensionChangelogVersions": {
+    "{\"source\":\"npm:pi-lens\",\"scope\":\"user\"}": "4.5.0",
+    "{\"source\":\"npm:@llblab/pi-telegram\",\"scope\":\"user\"}": "0.59.1",
+    "{\"source\":\"npm:pi-push-to-talk\",\"scope\":\"user\"}": "0.7.0",
+    "{\"source\":\"npm:awesome-pi-themes\",\"scope\":\"user\"}": "1.2.19"
+  },
+  "theme": "laser-swamp"
+}

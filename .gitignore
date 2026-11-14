@@ -1,0 +1,17 @@
+agent/auth.json
+agent/telegram.json
+
+**/*node_modules/
+**/*.venv
+
+models/
+
+agent/bin/
+agent/install/
+agent/pi-hermes-memory/
+agent/projects-memory/
+agent/sessions/
+agent/tmp/
+
+agent/.pi-hermes*
+agent/models-store.json
