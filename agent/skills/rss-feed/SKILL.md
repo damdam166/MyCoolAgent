@@ -40,7 +40,7 @@ Read the url from $PI_AGENT_DIR/rss.json (JSON or plain string).
 ### List recent articles from a specific time span (Python)
 5. Run:
    ```bash
-   python scripts/list_recent_entries.py 42 --hours 12
+   python scripts/list_recent_entries.py --hours 12
    ```
    * `--hours` (default 24) – only entries newer than *N* hours are shown.
 
@@ -65,7 +65,7 @@ If you prefer the raw API, the $URL variable comes from the `$PI_AGENT_DIR/rss.j
 3. `python scripts/fetch_article.py <entry_id>` prints title, author and HTML content.
 4. `--save` writes a non‑empty file.
 5. `python scripts/list_feed_entries.py <feed_id>` prints all entries for that feed.
-6. `python scripts/list_recent_entries.py <feed_id> --hours <N>` prints only entries newer than *N* hours.
+6. `python scripts/list_recent_entries.py --hours <N>` prints only entries newer than *N* hours.
 
 ## Python scripts
 - `scripts/list_feeds.py` – list feeds or show latest entries for a feed (uses `miniflux.Client.get_feeds` / `get_feed_entries`).

@@ -12,10 +12,9 @@ Usage:
 import argparse
 from _wrapper import WrapperClient
 
+
 def main() -> None:
-    parser = argparse.ArgumentParser(
-        description="List all entries of a Miniflux feed."
-    )
+    parser = argparse.ArgumentParser(description="List all entries of a Miniflux feed.")
     parser.add_argument("feed_id", type=int, help="Feed ID to query")
     parser.add_argument(
         "--limit",
@@ -31,9 +30,7 @@ def main() -> None:
     entries = result.get("entries", [])
     total = result.get("total", len(entries))
 
-    print(
-        f"Feed #{args.feed_id} – showing {len(entries)} of {total} entries:\n"
-    )
+    print(f"Feed #{args.feed_id} – showing {len(entries)} of {total} entries:\n")
 
     for entry in entries:
         eid = entry.get("id", "?")

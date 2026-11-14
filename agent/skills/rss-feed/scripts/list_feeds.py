@@ -14,12 +14,18 @@ With --entries <feed_id>, prints the latest entries for that feed.
 import argparse
 from _wrapper import WrapperClient
 
+
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--entries", type=int, metavar="FEED_ID",
-                        help="Show latest entries for this feed id")
-    parser.add_argument("--limit", type=int, default=10,
-                        help="Max entries to show (default: 10)")
+    parser.add_argument(
+        "--entries",
+        type=int,
+        metavar="FEED_ID",
+        help="Show latest entries for this feed id",
+    )
+    parser.add_argument(
+        "--limit", type=int, default=10, help="Max entries to show (default: 10)"
+    )
     args = parser.parse_args()
 
     client = WrapperClient()

@@ -12,11 +12,14 @@ import argparse
 
 from _wrapper import WrapperClient
 
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="List entries newer than a given number of hours."
     )
-    parser.add_argument("--hours", type=int, help="N hours since now", required=False, default=24)
+    parser.add_argument(
+        "--hours", type=int, help="N hours since now", required=False, default=24
+    )
     args = parser.parse_args()
 
     client = WrapperClient()
@@ -25,9 +28,7 @@ def main() -> None:
     result = client.get_entries(limit=args.hours, direction="desc")
     entries = result.get("entries", [])
 
-    print(
-        f"Entries from the last {args.hours} hour(s):\n"
-    )
+    print(f"Entries from the last {args.hours} hour(s):\n")
 
     for entry in entries:
         eid = entry.get("id", "?")

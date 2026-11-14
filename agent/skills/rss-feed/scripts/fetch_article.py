@@ -20,20 +20,22 @@ try:
 except ImportError:
     sys.exit("Missing dependency: miniflux\nInstall with: pip install miniflux")
 
+
 def find_entry(client, entry_id: int) -> dict | None:
-    """Locate an entry by id.
-    """
+    """Locate an entry by id."""
     try:
         entry = client.get_entry(entry_id)
         return entry
     except miniflux.ClientError:
         return None
 
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Fetch a Miniflux article.")
     parser.add_argument("entry_id", type=int, help="Entry id to retrieve.")
-    parser.add_argument("--save", default=None,
-                        help="Save article body to FILE instead of printing.")
+    parser.add_argument(
+        "--save", default=None, help="Save article body to FILE instead of printing."
+    )
     args = parser.parse_args()
 
     client = WrapperClient()

@@ -22,6 +22,7 @@ RSS_FILE = os.path.join(
     "rss.json",
 )
 
+
 def load_from_file(path: str, key: str) -> str:
     with open(path, "r", encoding="utf-8") as fh:
         raw = fh.read().strip()
@@ -31,7 +32,7 @@ def load_from_file(path: str, key: str) -> str:
             if key in data:
                 return data[key]
             else:
-                raise ValueError(f'{key} not found in the file {path}')
+                raise ValueError(f"{key} not found in the file {path}")
         if isinstance(data, str):
             return data
     except json.JSONDecodeError:
@@ -43,14 +44,13 @@ def WrapperClient() -> miniflux.Client:
     if not os.path.exists(RSS_FILE):
         sys.exit(f"RSS file not found: {RSS_FILE}")
 
-
     base_url = load_from_file(RSS_FILE, "url")
     token = load_from_file(RSS_FILE, "token")
     client = miniflux.Client(base_url, api_key=token)
 
     return client
 
+
 if __name__ == "__main__":
     client = WrapperClient()
     print(client.get_feeds())
-
