@@ -5,5 +5,5 @@
   "tui.editor.cursorRight": ["right", "alt+l"],
   "tui.editor.cursorWordLeft": ["alt+left", "alt+b"],
   "tui.editor.cursorWordRight": ["alt+right", "alt+w"],
-  "tui.app.interrupt": ["alt+;"]
+  "app.interrupt": ["alt+c"]
 }
