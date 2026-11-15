@@ -1,4 +1,4 @@
-#!/home/node/.pi/agent/skills/rss-feed/.venv/bin/python3
+#!/usr/bin/env python3
 """
 list_feed_entries.py – List every entry of a given Miniflux feed.
 

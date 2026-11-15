@@ -1,4 +1,4 @@
-#!/home/node/.pi/agent/skills/rss-feed/.venv/bin/python3
+#!/usr/bin/env python3
 """
 fetch_article.py – Fetch a specific Miniflux entry using the official Python client.
 

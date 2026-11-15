@@ -1,4 +1,4 @@
-#!/home/node/.pi/agent/skills/rss-feed/.venv/bin/python3
+#!/usr/bin/env python3
 """
 list_recent_entries.py – List Miniflux entries newer than a specified period.
 

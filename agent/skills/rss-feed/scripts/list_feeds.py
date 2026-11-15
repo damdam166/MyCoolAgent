@@ -1,4 +1,4 @@
-#!/home/node/.pi/agent/skills/rss-feed/.venv/bin/python3
+#!/usr/bin/env python3
 """
 list_feeds.py – List feeds from a Miniflux instance using the official Python client.
 

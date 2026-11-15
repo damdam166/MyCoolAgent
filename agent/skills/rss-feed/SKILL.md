@@ -1,9 +1,9 @@
 ---
 name: "rss-feed"
-description: "Retrieve RSS feeds from a Miniflux instance using the official Python client (miniflux) or curl/jq. The token is stored in $PI_AGENT_DIR/.pi/agent/rss.json. Use to list feeds, get feed details, fetch headlines, or retrieve full article content."
+description: "Retrieve RSS feeds from a Miniflux instance using the official Python client (miniflux) or curl/jq. The token is stored in $PI_AGENT_DIR/rss.json. Use to list feeds, get feed details, fetch headlines, or retrieve full article content."
 version: 1
 created: "2026-11-14"
-updated: "2026-11-14"
+updated: "2026-11-15"
 ---
 ## When to Use
 When you need to list available feeds, retrieve feed details, or get headlines from your Miniflux instance. Example queries: \"List my feeds\", \"Show headlines from feed 5\", \"What are the latest items in feed X\".

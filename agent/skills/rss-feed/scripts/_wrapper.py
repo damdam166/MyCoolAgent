@@ -1,4 +1,4 @@
-#!/home/node/.pi/agent/skills/rss-feed/.venv/bin/python3
+#!/usr/bin/env python3
 """
 _wrapper.py – A simple wrapper over `miniflux.Client` that should not
 be called directly.
