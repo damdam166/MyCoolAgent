@@ -37,7 +37,9 @@ ENV PI_CODING_AGENT_DIR=/home/node/.pi/agent
 ENV PI_TELEMETRY=0
 
 USER root
-RUN mkdir -p /workspace && chown node:node /workspace
+RUN mkdir -p /workspace \
+    && chown node:node /workspace \
+    && usermod -a -G audio node
 
 USER node
 COPY .tmux.conf /home/node/.tmux.conf
@@ -53,7 +55,6 @@ ENTRYPOINT ["tmux", "new", "-A", "-s", "pi", "'pi'"]
 #     --name AgentSmithResurrection \
 #     -h sandboxpi \
 #     -e OPENROUTER_API_KEY \
-#     --device /dev/snd:/dev/snd \
 #     -v "$HOME/Documents/currentWork:/workspace/currentWork" \
 #     -v "$HOME/.pi/agent/telegram.json:$PI_CODING_AGENT_DIR/telegram.json:ro" \
 #     -v "$HOME/.pi/agent/rss.json:$PI_CODING_AGENT_DIR/rss.json:ro" \
