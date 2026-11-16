@@ -5,21 +5,29 @@
   "hideThinkingBlock": false,
   "packages": [
     "npm:@0xkahi/pi-vim-keys",
-    "git:github.com/amosblomqvist/pi-interactive-subagents",
     "npm:openwiki",
     "npm:@juicesharp/rpiv-ask-user-question",
-    "npm:pi-lens",
     "npm:@llblab/pi-telegram",
-    "npm:pi-naming",
-    "npm:oh-my-agent-pi",
     "npm:pi-hermes-memory",
-    "npm:awesome-pi-themes"
+    "npm:awesome-pi-themes",
+    "npm:@earendil-works/pi-voice",
+    "npm:@vigolium/piolium",
+    "npm:@juicesharp/rpiv-todo",
+    "npm:pi-lens",
+    "npm:pi-web-access",
+    "npm:pi-naming",
+    "npm:@maxiaochao/pi-scheduler",
+    "git:github.com/amosblomqvist/pi-interactive-subagents"
   ],
   "extensionChangelogVersions": {
     "{\"source\":\"npm:pi-lens\",\"scope\":\"user\"}": "4.5.0",
     "{\"source\":\"npm:@llblab/pi-telegram\",\"scope\":\"user\"}": "0.59.1",
     "{\"source\":\"npm:pi-push-to-talk\",\"scope\":\"user\"}": "0.7.0",
-    "{\"source\":\"npm:awesome-pi-themes\",\"scope\":\"user\"}": "1.2.19"
+    "{\"source\":\"npm:awesome-pi-themes\",\"scope\":\"user\"}": "1.2.19",
+    "{\"source\":\"npm:pi-web-access\",\"scope\":\"user\"}": "0.47.0",
+    "{\"source\":\"npm:@maxiaochao/pi-toolkit\",\"scope\":\"user\"}": "0.15.0",
+    "{\"source\":\"npm:@maxiaochao/pi-scheduler\",\"scope\":\"user\"}": "0.1.1",
+    "{\"source\":\"npm:@maxiaochao/pi-background-tasks\",\"scope\":\"user\"}": "0.4.0"
   },
   "theme": "laser-swamp"
 }

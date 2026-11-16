@@ -115,7 +115,11 @@ To be continued...
   browser\_\* tools
   (auth, JWT, storage, forms, blank screen, hydration, stale data).
 
-- **youtube-transcript**: Feech YouTube title and transcript
+- **youtube-transcript**: Fetch YouTube title and transcript
   via yt-dlp captions. Requires yt-dlp and Python.
+
+- **rss-feed**: Retrieve RSS feeds from a Miniflux instance using the
+  official Python client (`miniflux`) or curl/jq. List feeds, get details,
+  fetch headlines, or retrieve full article content.
 
 ### EOF

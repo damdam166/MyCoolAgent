@@ -10,6 +10,8 @@ models/
 agent/bin/
 agent/install/
 agent/pi-hermes-memory/
+pi-voice.json
+pi-voice.log
 agent/projects-memory/
 agent/tmp/
 
