@@ -5,7 +5,7 @@ ARG PI_VERSION=latest
 RUN apt-get update \
     && apt-get install -y --no-install-recommends bash ca-certificates \
     fd-find git ripgrep yt-dlp ffmpeg python3 python3.11-venv python3-pip \
-    make tmux vim neovim curl wget jq yq \
+    make tmux vim neovim curl wget jq yq alsa-utils \
     && ln -s /usr/bin/fdfind /usr/local/bin/fd \
     && rm -rf /var/lib/apt/lists/*
 
@@ -53,9 +53,12 @@ ENTRYPOINT ["tmux", "new", "-A", "-s", "pi", "'pi'"]
 #     --name AgentSmithResurrection \
 #     -h sandboxpi \
 #     -e OPENROUTER_API_KEY \
+#     --device /dev/snd:/dev/snd \
 #     -v "$HOME/Documents/currentWork:/workspace/currentWork" \
 #     -v "$HOME/.pi/agent/telegram.json:$PI_CODING_AGENT_DIR/telegram.json:ro" \
 #     -v "$HOME/.pi/agent/rss.json:$PI_CODING_AGENT_DIR/rss.json:ro" \
+#     -v "$HOME/.pi/agent/pi-voice.json:$PI_CODING_AGENT_DIR/pi-voice.json:ro" \
+#     -v "$HOME/.pi/agent/pi-voice:$PI_CODING_AGENT_DIR/pi-voice:ro" \
 #     -v "$HOME/.pi/agent/pi-hermes-memory:$PI_CODING_AGENT_DIR/pi-hermes-memory" \
 #     -v "$HOME/.pi/agent/projects-memory:$PI_CODING_AGENT_DIR/projects-memory" \
 #     -v "$HOME/.pi/agent/sessions:$PI_CODING_AGENT_DIR/sessions" \

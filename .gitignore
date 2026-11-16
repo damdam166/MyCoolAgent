@@ -6,12 +6,12 @@ agent/rss.json
 **/*.venv
 
 models/
-pi-voice/
 
 agent/bin/
 agent/install/
 agent/pi-hermes-memory/
-pi-voice.log
+agent/pi-voice/
+agent/pi-voice.log
 agent/projects-memory/
 agent/tmp/
 
